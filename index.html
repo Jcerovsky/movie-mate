@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MovieMate</title>
+
+        <!-- links -->
+        <link rel="stylesheet" href="index.css">
+        
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="top">
+            <div class="top__div">
+                <h1 class="top__div__find">Find your film</h1>
+                <a class="top__div__watchlist" href="watchlist.html">My Watchlist</a>
+            </div>
+            <div class="top__search-div">
+                <input class="input" 
+                type="text"
+                id="input" 
+                placeholder= "Avengers: End Game">
+                <button class="top__button" id="search-btn">Search</button>
+            </div>
+        </div>
+        
+        <div class="movie-section movie-section-watchlist" id="movie-section">
+            <img src="images/Icon.png" class="movie-icon">
+            <h3 class="movie-section__text">Start exploring</h3>
+        </div>
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
