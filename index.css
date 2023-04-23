@@ -73,18 +73,20 @@ html, body {
 
 
 .movie-section {
+    box-sizing: border-box;
     font-family: sans-serif;
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
+    margin: 2em auto;
+    padding: 0 2em;
 }
 
 
 .movie-icon {
-    width: 10%;
-    margin-top: 40%
+    width: 100%;
+    margin-top: 150px;
 }
 
 .movie-section__text,
@@ -122,13 +124,14 @@ html, body {
 .movie-poster {
     width: 100px;
     height: 150px;
+    object-fit: cover;
 }
 
 .movie-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 2em;
+    margin: 0 auto;
     gap: 1em;
     padding: 1.25em 0;
     border-bottom: solid 1.5px #2C2C2C;
@@ -193,4 +196,16 @@ html, body {
 
 .red {
     color: red;
+}
+
+.empty-movie-section {
+    position: absolute;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .movie-icon {
+        width: 50px;
+        margin-left: 30%;
+    }
 }
